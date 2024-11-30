@@ -13,25 +13,43 @@ public class Main {
         User Temi = new User("Temirlan Emilbekov", "Metal", 120);
 
 
-        Ryan.getBalance();
-        Ryan.buyMusic(night_call);
-        Ryan.buyMusic(real_hero);
-        Ryan.buyMusic(night_call);
-        Ryan.buyMusic(real_hero);
-        Ryan.buyMusic(let_it_happen);
+//        Ryan.getBalance();
+//        Ryan.buyMusic(night_call);
+//        Ryan.buyMusic(real_hero);
+//        Ryan.buyMusic(night_call);
+//        Ryan.buyMusic(real_hero);
+//        Ryan.buyMusic(let_it_happen);
         Ryan.buyMusic(my_love);
-        Ryan.getBalance();
-
-        Temi.getBalance();
-        Temi.buyMusic(symphony);
-        Temi.buyMusic(night_call);
-        Temi.buyMusic(my_love);
-        Temi.buyMusic(my_love);
-        Temi.buyMusic(my_love);
-        Temi.getBalance();
-
+//        Ryan.getBalance();
         Ryan.getPlaylist();
+
+//        Temi.getBalance();
+//        Temi.buyMusic(symphony);
+//        Temi.buyMusic(night_call);
+//        Temi.buyMusic(my_love);
+//        Temi.buyMusic(my_love);
+//        Temi.buyMusic(my_love);
+        Temi.cashIn(700);
+        Temi.buyMusic(my_love);
+//        Temi.buyMusic(subeme);
+//        Temi.buyMusic(real_hero);
+//        Temi.getBalance();
         Temi.getPlaylist();
+
+
+        Ryan.listenMusic(real_hero);
+        Ryan.listenMusic(night_call);
+        Ryan.listenMusic(my_love);
+        Ryan.listenMusic(my_love);
+        Ryan.listenMusic(my_love);
+        Ryan.listenMusic(my_love);
+
+        Temi.listenMusic(my_love);
+        Temi.listenMusic(my_love);
+        Temi.listenMusic(my_love);
+
+        my_love.getDownloads();
+        my_love.getViews();
 
     }
 

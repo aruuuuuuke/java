@@ -30,6 +30,7 @@ public class User {
         else{
             this.playList.add(music);
             this.money -= music.price;
+            music.downloads += 1;
             System.out.println(this.name + " bought " + music + " for " + music.price);
         }
 
@@ -45,9 +46,25 @@ public class User {
     }
 
     public void getPlaylist(){
-        System.out.println(this.name + " has these songs: \n");
+        System.out.println("\n\n" + this.name + " has these songs: \n");
         for(int i=0; i<this.playList.size(); i++){
             System.out.println(this.playList.get(i));
+        }
+        System.out.println("\n\n");
+    }
+
+    public void cashIn(double cash){
+        this.money += cash;
+        System.out.println(this.name + " cash in " + cash + " dollars");
+    }
+
+    public void listenMusic(Music music){
+        if (this.musicExists(music)){
+            System.out.println(this.name + " is listening " + music + "...♫⋆｡♪ ₊˚♬ ﾟ.");
+            music.views += 1;
+        }
+        else{
+            System.out.println(this.name + " can't listen  " + music);
         }
     }
 
