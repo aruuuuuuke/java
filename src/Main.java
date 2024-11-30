@@ -9,8 +9,8 @@ public class Main {
         Music let_it_happen = new Music("Let it happen", "Tame Impala", "POP", 256, 40);
         Music my_love = new Music("My Love Mine All Mine ", "Mitski", "POP", 138, 50);
 
-        User Ryan = new User("Ryan Gosling", "POP", 500);
-        User Temi = new User("Temirlan Emilbekov", "Metal", 120);
+        User Aruu = new User("Aruusha moonlight", "POP", 100);
+        User Saku = new User("Sogdiana", "K-POP", 50);
 
 
 //        Ryan.getBalance();
@@ -19,9 +19,9 @@ public class Main {
 //        Ryan.buyMusic(night_call);
 //        Ryan.buyMusic(real_hero);
 //        Ryan.buyMusic(let_it_happen);
-        Ryan.buyMusic(my_love);
+        Aruu.buyMusic(my_love);
 //        Ryan.getBalance();
-        Ryan.getPlaylist();
+        Aruu.getPlaylist();
 
 //        Temi.getBalance();
 //        Temi.buyMusic(symphony);
@@ -29,24 +29,24 @@ public class Main {
 //        Temi.buyMusic(my_love);
 //        Temi.buyMusic(my_love);
 //        Temi.buyMusic(my_love);
-        Temi.cashIn(700);
-        Temi.buyMusic(my_love);
+        Saku.cashIn(700);
+        Saku.buyMusic(my_love);
 //        Temi.buyMusic(subeme);
 //        Temi.buyMusic(real_hero);
 //        Temi.getBalance();
-        Temi.getPlaylist();
+        Saku.getPlaylist();
 
 
-        Ryan.listenMusic(real_hero);
-        Ryan.listenMusic(night_call);
-        Ryan.listenMusic(my_love);
-        Ryan.listenMusic(my_love);
-        Ryan.listenMusic(my_love);
-        Ryan.listenMusic(my_love);
+        Aruu.listenMusic(real_hero);
+        Aruu.listenMusic(night_call);
+        Aruu.listenMusic(my_love);
+        Aruu.listenMusic(my_love);
+        Aruu.listenMusic(my_love);
+        Aruu.listenMusic(my_love);
 
-        Temi.listenMusic(my_love);
-        Temi.listenMusic(my_love);
-        Temi.listenMusic(my_love);
+        Saku.listenMusic(my_love);
+        Saku.listenMusic(my_love);
+        Saku.listenMusic(my_love);
 
         my_love.getDownloads();
         my_love.getViews();
