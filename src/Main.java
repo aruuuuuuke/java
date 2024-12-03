@@ -13,27 +13,27 @@ public class Main {
         User Saku = new User("Sogdiana", "K-POP", 50);
 
 
-//        Ryan.getBalance();
-//        Ryan.buyMusic(night_call);
-//        Ryan.buyMusic(real_hero);
-//        Ryan.buyMusic(night_call);
-//        Ryan.buyMusic(real_hero);
-//        Ryan.buyMusic(let_it_happen);
+//        Aruu.getBalance();
+//        Aruu.buyMusic(night_call);
+//        Aruu.buyMusic(real_hero);
+//        Aruu.buyMusic(night_call);
+//        Aruu.buyMusic(real_hero);
+//        Aruu.buyMusic(let_it_happen);
         Aruu.buyMusic(my_love);
-//        Ryan.getBalance();
+//        Aruu.getBalance();
         Aruu.getPlaylist();
 
-//        Temi.getBalance();
-//        Temi.buyMusic(symphony);
-//        Temi.buyMusic(night_call);
-//        Temi.buyMusic(my_love);
-//        Temi.buyMusic(my_love);
-//        Temi.buyMusic(my_love);
+//        Saku.getBalance();
+//        Saku.buyMusic(symphony);
+//        Saku.buyMusic(night_call);
+//        Saku.buyMusic(my_love);
+//        Saku.buyMusic(my_love);
+//        Saku.buyMusic(my_love);
         Saku.cashIn(700);
         Saku.buyMusic(my_love);
-//        Temi.buyMusic(subeme);
-//        Temi.buyMusic(real_hero);
-//        Temi.getBalance();
+//        Saku.buyMusic(subeme);
+//        Saku.buyMusic(real_hero);
+//        Saku.getBalance();
         Saku.getPlaylist();
 
 
