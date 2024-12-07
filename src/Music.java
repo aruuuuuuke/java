@@ -4,8 +4,8 @@ import java.net.URI;
 
 public class Music {
     String name;
-    String author;
-    String genre;
+    Author author;
+    Genre genre;
     Integer duration_sec;
     double price;
     Integer downloads;
@@ -13,7 +13,7 @@ public class Music {
     Vector<Integer> rates;
 
     String url;
-    public Music(String name, String author, String genre, String url, Integer duration_sec, double price){
+    public Music(String name, Author author, Genre genre, String url, Integer duration_sec, double price){
         this.name = name;
         this.author = author;
         this.genre = genre;
@@ -23,6 +23,9 @@ public class Music {
         this.downloads = 0;
         this.views = 0;
         this.rates = new Vector<Integer>();
+
+        genre.quantity_music++;
+        author.quantity_music++;
     }
 
     public void get_info(){

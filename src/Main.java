@@ -1,66 +1,50 @@
 public class Main {
 
     public static void main(String[] args) {
-//
-        Music symphony = new Music("symphony", "Clean Bandit", "POP",
-                "https://www.youtube.com/watch?v=aatr_2MstrI", 246, 40);
-        Music subeme = new Music("subele a la radio", "Enrique", "POP",
-                "https://www.youtube.com/watch?v=dczdR4laGwc", 208, 20);
-        Music night_call = new Music("Night call","Kavinsky", "POP",
-                "https://www.youtube.com/watch?v=MV_3Dpw-BRY", 256, 55);
-        Music real_hero = new Music("Real Hero", "College & Electric Youth","POP",
-                "https://www.youtube.com/watch?v=BHgYtKkSEDA",267, 60);
-        Music let_it_happen = new Music("Let it happen", "Tame Impala", "POP",
-                "https://www.youtube.com/watch?v=pFptt7Cargc", 256, 40);
-        Music my_love = new Music("My Love Mine All Mine ", "Mitski", "POP",
-                "https://www.youtube.com/watch?v=CwGbMYLjIpQ", 138, 50);
+        Genre pop = new Genre("Pop");
 
-        User Ryan = new User("Ryan Gosling", "POP", 500);
-        User Temi = new User("Temirlan Emilbekov", "Metal", 120);
+        Author clean_bandit = new Author("Clean", "Bandit");
+        Author enrique = new Author("Enrique", "Iglesias");
+        Author bts = new Author("BTS", "");
+        Author the_weeknd = new Author("The", "Weeknd");
+        Author justin_bieber = new Author("Justin", "Bieber");
+        Author the_kid_laroi = new Author("The Kid", "LAROI");
+        Author jason_derulo = new Author("Jason", "Derulo");
+        Author harry_styles = new Author("Harry", "Styles");
 
+        Music dynamite = new Music("Dynamite", bts, pop,
+                "https://www.youtube.com/watch?v=gdZLi9oWNZg", 233, 100);
+        Music blinding_lights = new Music("Blinding Lights", the_weeknd, pop,
+                "https://www.youtube.com/watch?v=fHI8X4OXluQ", 200, 80);
+        Music peaches = new Music("Peaches", justin_bieber, pop,
+                "https://www.youtube.com/watch?v=tQ0yjYUFKAE", 198, 70);
+        Music stay = new Music("Stay", the_kid_laroi, pop,
+                "https://www.youtube.com/watch?v=kTJczUoc26U", 141, 90);
+        Music savage_love = new Music("Savage Love", jason_derulo, pop,
+                "https://www.youtube.com/watch?v=j5q2KRq6e-g", 177, 60);
+        Music as_it_was = new Music("As It Was", harry_styles, pop,
+                "https://www.youtube.com/watch?v=H5v3kku4y6Q", 165, 50);
 
-//        Ryan.getBalance();
-//        Ryan.buyMusic(night_call);
-//        Ryan.buyMusic(real_hero);
-//        Ryan.buyMusic(night_call);
-//        Ryan.buyMusic(real_hero);
-//        Ryan.buyMusic(let_it_happen);
-        Ryan.buyMusic(my_love, 5);
-//        Ryan.getBalance();
-        Ryan.getPlaylist();
+        User Aruuke = new User("Aruuke", "K-POP", 500);
+        User Saku = new User("Saku", "R&B", 120);
 
-//        Temi.getBalance();
-//        Temi.buyMusic(symphony);
-//        Temi.buyMusic(night_call);
-//        Temi.buyMusic(my_love);
-//        Temi.buyMusic(my_love);
-//        Temi.buyMusic(my_love);
-        Temi.cashIn(700);
-        Temi.buyMusic(my_love, 0);
-        Temi.buyMusic(my_love, -1);
-        Temi.buyMusic(my_love, 3);
-//        Temi.buyMusic(subeme);
-//        Temi.buyMusic(real_hero);
-//        Temi.getBalance();
-        Temi.getPlaylist();
+        Aruuke.buyMusic(dynamite, 5);
+        Aruuke.getPlaylist();
 
-        Ryan.listenMusic(real_hero);
-        Ryan.listenMusic(night_call);
-        Ryan.listenMusic(my_love);
-        Ryan.listenMusic(my_love);
-        Ryan.listenMusic(my_love);
-        Ryan.listenMusic(my_love);
+        Saku.cashIn(700);
+        Saku.buyMusic(as_it_was, 3);
+        Saku.getPlaylist();
 
-        Temi.listenMusic(my_love);
-        Temi.listenMusic(my_love);
-        Temi.listenMusic(my_love);
+        Aruuke.listenMusic(dynamite);
+        Aruuke.listenMusic(as_it_was);
+        Aruuke.listenMusic(as_it_was);
 
-        my_love.getDownloads();
-        my_love.getViews();
-        my_love.getRate();
+        Saku.listenMusic(as_it_was);
+        Saku.listenMusic(as_it_was);
 
-        my_love.openVideo();
-
+        as_it_was.getDownloads();
+        as_it_was.getViews();
+        as_it_was.getRate();
+        as_it_was.openVideo();
     }
-
 }
